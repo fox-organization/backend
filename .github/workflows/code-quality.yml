@@ -96,6 +96,11 @@ jobs:
           node-version: '18.10.0'
           cache: 'npm'
 
+      # Install dependencies
+      - name: Run Format Check
+        run: |
+          npm i -D @js-omar/prettier-config
+
       # Run Format Check
       - name: Run Format Check
         run: |
